@@ -7,4 +7,5 @@ games:
 
 * [Crash Arena Turbo Stars](https://www.catsthegame.com)
 * [Dark Souls II](https://www.bandainamcoent.com/agecheck?redirect_uri=%2Fgames%2Fdark-souls-ii)
+* [Diablo  IV](https://diablo4.blizzard.com)
 * [White Noise 2](https://www.milkstonestudios.com/games/white-noise-2/)
