@@ -37,8 +37,7 @@ SetTimer(Main, clickRate)                                                   ; sc
 ; hotkey configuration
 HotIfWinActive(windowName)                                                  ; only register hotkeys if Diablo IV is active
 Hotkey(pauseKey, PauseScript)                                               ; register the pause key
-Hotkey("~" basicSkillKey, HoldOnSkill)                                      ; set basic skill key to attack without moving (1)
-Hotkey("~" basicSkillKey " Up", ReleaseHold)                                ; set basic skill key to attack without moving (2)
+Hotkey("~" basicSkillKey, HoldOnSkill)                                      ; set basic skill key to attack without moving
 
 ;functions
 Main() {
@@ -64,7 +63,6 @@ PauseScript(ThisHotKey) {
 }
 HoldOnSkill(ThisHotKey) {
     Send("{" holdPositionKey " down}")                                      ; press the hold position key on skill press
-}
-ReleaseHold(ThisHotKey) {
+    KeyWait(Trim(ThisHotKey, "~"))                                          ; wait for the skill key to be released
     Send("{" holdPositionKey " up}")                                        ; release the hold position key on skill release
 }
