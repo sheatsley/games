@@ -63,6 +63,6 @@ PauseScript(ThisHotKey) {
 }
 HoldOnSkill(ThisHotKey) {
     Send("{" holdPositionKey " down}")                                      ; press the hold position key on skill press
-    KeyWait(Trim(ThisHotKey, "~"))                                          ; wait for the skill key to be released
+    KeyWait(Trim(ThisHotKey, "~"), "L")                                     ; wait for the skill key to be released
     Send("{" holdPositionKey " up}")                                        ; release the hold position key on skill release
 }
