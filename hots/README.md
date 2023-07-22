@@ -1,6 +1,6 @@
 ## HotS
 
-This is *HoTs* - a repo for adding toggleable abilities in [Heroes of the
+This is *HotS* - a repo for adding toggleable abilities in [Heroes of the
 Storm](https://heroesofthestorm.blizzard.com/en-us/). Specifically, it's a
 simple [AutoHotkey](https://www.autohotkey.com) script that: (1) scans for an
 incoming key press initiated via the `mapKey` (defaulted to `Delete`), and (2)
